@@ -167,182 +167,73 @@
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
 <!--/_menu 作为公共模版分离出去-->
-<!-- 
 
- -->
-
+<!--  -->
 <section class="Hui-article-box">
-    <nav class="breadcrumb"><i class="Hui-iconfont"></i> <a href="/" class="maincolor">首页</a>
-        <span class="c-999 en">&gt;</span>
-        <span class="c-666">我的桌面</span>
-        <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+    <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 订单管理 <span class="c-gray en">&gt;</span> 订单管理<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
     <div class="Hui-article">
-        <article class="cl pd-20">
-            <p class="f-20 text-success">欢迎使用H-ui.admin
-                <span class="f-14">v2.3</span>
-                后台模版！</p>
-            <p>登录次数：18 </p>
-            <p>上次登录IP：222.35.131.79.1  上次登录时间：2014-6-14 11:19:55</p>
-            <table class="table table-border table-bordered table-bg">
-                <thead>
-                    <tr>
-                        <th colspan="7" scope="col">信息统计</th>
-            </tr>
-                    <tr class="text-c">
-                        <th>统计</th>
-                        <th>资讯库</th>
-                        <th>图片库</th>
-                        <th>产品库</th>
-                        <th>用户</th>
-                        <th>管理员</th>
-            </tr>
-        </thead>
-                <tbody>
-                    <tr class="text-c">
-                        <td>总数</td>
-                        <td>92</td>
-                        <td>9</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>20</td>
-            </tr>
-                    <tr class="text-c">
-                        <td>今日</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-            </tr>
-                    <tr class="text-c">
-                        <td>昨日</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-            </tr>
-                    <tr class="text-c">
-                        <td>本周</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-            </tr>
-                    <tr class="text-c">
-                        <td>本月</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-            </tr>
-        </tbody>
-    </table>
-            <table class="table table-border table-bordered table-bg mt-20">
-                <thead>
-                    <tr>
-                        <th colspan="2" scope="col">服务器信息</th>
-            </tr>
-        </thead>
-                <tbody>
-                    <tr>
-                        <th width="30%">服务器计算机名</th>
-                        <td><span id="lbServerName">http://127.0.0.1/</span></td>
-            </tr>
-                    <tr>
-                        <td>服务器IP地址</td>
-                        <td>192.168.1.1</td>
-            </tr>
-                    <tr>
-                        <td>服务器域名</td>
-                        <td>www.h-ui.net</td>
-            </tr>
-                    <tr>
-                        <td>服务器端口 </td>
-                        <td>80</td>
-            </tr>
-                    <tr>
-                        <td>服务器IIS版本 </td>
-                        <td>Microsoft-IIS/6.0</td>
-            </tr>
-                    <tr>
-                        <td>本文件所在文件夹 </td>
-                        <td>D:WebSiteHanXiPuTai.comXinYiCMS.Web</td>
-            </tr>
-                    <tr>
-                        <td>服务器操作系统 </td>
-                        <td>Microsoft Windows NT 5.2.3790 Service Pack 2</td>
-            </tr>
-                    <tr>
-                        <td>系统所在文件夹 </td>
-                        <td>C:WINDOWSsystem32</td>
-            </tr>
-                    <tr>
-                        <td>服务器脚本超时时间 </td>
-                        <td>30000秒</td>
-            </tr>
-                    <tr>
-                        <td>服务器的语言种类 </td>
-                        <td>Chinese (People's Republic of China)</td>
-            </tr>
-                    <tr>
-                        <td>.NET Framework 版本 </td>
-                        <td>2.050727.3655</td>
-            </tr>
-                    <tr>
-                        <td>服务器当前时间 </td>
-                        <td>2014-6-14 12:06:23</td>
-            </tr>
-                    <tr>
-                        <td>服务器IE版本 </td>
-                        <td>6.0000</td>
-            </tr>
-                    <tr>
-                        <td>服务器上次启动到现在已运行 </td>
-                        <td>7210分钟</td>
-            </tr>
-                    <tr>
-                        <td>逻辑驱动器 </td>
-                        <td>C:D:</td>
-            </tr>
-                    <tr>
-                        <td>CPU 总数 </td>
-                        <td>4</td>
-            </tr>
-                    <tr>
-                        <td>CPU 类型 </td>
-                        <td>x86 Family 6 Model 42 Stepping 1, GenuineIntel</td>
-            </tr>
-                    <tr>
-                        <td>虚拟内存 </td>
-                        <td>52480M</td>
-            </tr>
-                    <tr>
-                        <td>当前程序占用内存 </td>
-                        <td>3.29M</td>
-            </tr>
-                    <tr>
-                        <td>Asp.net所占内存 </td>
-                        <td>51.46M</td>
-            </tr>
-                    <tr>
-                        <td>当前Session数量 </td>
-                        <td>8</td>
-            </tr>
-                    <tr>
-                        <td>当前SessionID </td>
-                        <td>gznhpwmp34004345jz2q3l45</td>
-            </tr>
-                    <tr>
-                        <td>当前系统用户名 </td>
-                        <td>NETWORK SERVICE</td>
-            </tr>
-        </tbody>
-    </table>
-</article>
+            <article class="cl pd-20">
+            <div class="text-c"> 日期范围：
+                <input type="text" onfocus="WdatePicker({maxDate:'#F{$dp.$D('datemax')||'%y-%M-%d'}'})" id="datemin" class="input-text Wdate" style="width:120px;">
+                -
+                <input type="text" onfocus="WdatePicker({minDate:'#F{$dp.$D('datemin')}',maxDate:'%y-%M-%d'})" id="datemax" class="input-text Wdate" style="width:120px;">
+                <input type="text" class="input-text" style="width:250px" placeholder="输入会员名称、电话、邮箱" id="" name="">
+                <button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜订单</button>
+            </div>
 
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-hover table-bg table-sort">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="25"><input type="checkbox" name="" value=""></th>
+                            <th width="40">ID</th>
+                            <th width="100">订单编号</th>
+                            <th width="60">商品ID</th>
+                            <th width="70">收件人</th>
+                            <th width="100">收件人号码</th>
+                            <th width="150">地址</th>
+                            <th width="250">留言</th>
+                            <th width="65">邮编</th>
+                            <th width="100">下单时间</th>
+                            <th width="70">状态</th>
+                            <th width="70">总价</th>
+                            <th width="100">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-c">
+                            <td><input type="checkbox" value="1" name=""></td>
+                            <td>1</td>
+                            <td>12345678901234</td>
+                            <td>40</td>
+                            <td>一个人</td>
+                            <td>111111111</td>
+                            <td class="text-l">北京市 海淀区</td>
+                            <td class="text-l">加辣不辣不给钱</td>
+                            <td>111111</td>
+                            <td>2014-6-11 11:11:42</td>
+                            <td class="td-status"><span class="label label-success radius">已启用</span></td>
+                            <td>1111.11</td>
+                            <td class="td-manage"><a style="text-decoration:none" onClick="member_stop(this,'10001')" href="javascript:;" title="查看详情"><i class="Hui-iconfont">&#xe631;</i></a> <a title="编辑" href="javascript:;" onclick="order_edit('编辑','order-edit.html','4','','410')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="order_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <script>
+            /*订单-编辑*/
+            function order_edit(title,url,id,w,h){
+                layer_show(title,url,w,h);
+            }
+            /*订单-删除*/
+            function order_del(obj,id){
+                layer.confirm('确认要删除吗？',function(index){
+                    $(obj).parents("tr").remove();
+                    layer.msg('已删除!',{icon:1,time:1000});
+                });
+            }
+        </script>
+<!--  -->
 <footer class="footer">
             <p>感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch<br> Copyright &copy;2015 H-ui.admin v3.0 All Rights Reserved.<br> 本后台系统由<a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
 </footer>
@@ -375,4 +266,3 @@ var _hmt = _hmt || [];
 <!--/此乃百度统计代码，请自行删除-->
 </body>
 </html>
-<!--  -->

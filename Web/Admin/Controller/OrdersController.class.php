@@ -1,9 +1,9 @@
 <?php
-namespace Home\Controller;
+namespace Admin\Controller;
 use Think\Controller;
-class OrdersControllerController extends Controller {
+class OrdersController extends Controller {
     public function index(){
 
-        $this->show('');
+        $this->show();
     }
 }
