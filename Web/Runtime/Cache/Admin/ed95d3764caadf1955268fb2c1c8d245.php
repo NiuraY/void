@@ -18,6 +18,11 @@
 <link rel="stylesheet" type="text/css" href="/git/www/Public/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
 <link rel="stylesheet" type="text/css" href="/git/www/Public/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
 <link rel="stylesheet" type="text/css" href="/git/www/Public/Admin/static/h-ui.admin/css/style.css" />
+<script type="text/javascript" src="/git/www/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/git/www/Public/Admin/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/git/www/Public/Admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/git/www/Public/Admin/static/h-ui.admin/js/H-ui.admin.page.js"></script>
+
 <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -138,16 +143,10 @@
     </dd>
 </dl>
         <dl id="menu-tongji">
-            <dt><i class="Hui-iconfont">&#xe61a;</i> 系统统计<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dt><i class="Hui-iconfont">&#xe61a;</i> 订单管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a href="charts-1.html" title="折线图">折线图</a></li>
-                    <li><a href="charts-2.html" title="时间轴折线图">时间轴折线图</a></li>
-                    <li><a href="charts-3.html" title="区域图">区域图</a></li>
-                    <li><a href="charts-4.html" title="柱状图">柱状图</a></li>
-                    <li><a href="charts-5.html" title="饼状图">饼状图</a></li>
-                    <li><a href="charts-6.html" title="3D柱状图">3D柱状图</a></li>
-                    <li><a href="charts-7.html" title="3D饼状图">3D饼状图</a></li>
+                    <li><a href="<?php echo U('Orders/index');?>" title="订单管理">订单管理</a></li>
         </ul>
     </dd>
 </dl>
@@ -167,181 +166,70 @@
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
 <!--/_menu 作为公共模版分离出去-->
-<!-- 
-
- -->
 
 <section class="Hui-article-box">
-    <nav class="breadcrumb"><i class="Hui-iconfont"></i> <a href="/" class="maincolor">首页</a>
-        <span class="c-999 en">&gt;</span>
-        <span class="c-666">我的桌面</span>
-        <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+    <nav class="breadcrumb">
+    <i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 订单管理 <span class="c-gray en">&gt;</span> 订单管理 <span class="c-gray en">&gt;</span> 订单详情<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+    </nav>
     <div class="Hui-article">
-        <article class="cl pd-20">
-            <p class="f-20 text-success">欢迎使用H-ui.admin
-                <span class="f-14">v2.3</span>
-                后台模版！</p>
-            <p>登录次数：18 </p>
-            <p>上次登录IP：222.35.131.79.1  上次登录时间：2014-6-14 11:19:55</p>
-            <table class="table table-border table-bordered table-bg">
-                <thead>
-                    <tr>
-                        <th colspan="7" scope="col">信息统计</th>
-            </tr>
-                    <tr class="text-c">
-                        <th>统计</th>
-                        <th>资讯库</th>
-                        <th>图片库</th>
-                        <th>产品库</th>
-                        <th>用户</th>
-                        <th>管理员</th>
-            </tr>
-        </thead>
-                <tbody>
-                    <tr class="text-c">
-                        <td>总数</td>
-                        <td>92</td>
-                        <td>9</td>
-                        <td>0</td>
-                        <td>8</td>
-                        <td>20</td>
-            </tr>
-                    <tr class="text-c">
-                        <td>今日</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-            </tr>
-                    <tr class="text-c">
-                        <td>昨日</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-            </tr>
-                    <tr class="text-c">
-                        <td>本周</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-            </tr>
-                    <tr class="text-c">
-                        <td>本月</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-            </tr>
-        </tbody>
-    </table>
-            <table class="table table-border table-bordered table-bg mt-20">
-                <thead>
-                    <tr>
-                        <th colspan="2" scope="col">服务器信息</th>
-            </tr>
-        </thead>
-                <tbody>
-                    <tr>
-                        <th width="30%">服务器计算机名</th>
-                        <td><span id="lbServerName">http://127.0.0.1/</span></td>
-            </tr>
-                    <tr>
-                        <td>服务器IP地址</td>
-                        <td>192.168.1.1</td>
-            </tr>
-                    <tr>
-                        <td>服务器域名</td>
-                        <td>www.h-ui.net</td>
-            </tr>
-                    <tr>
-                        <td>服务器端口 </td>
-                        <td>80</td>
-            </tr>
-                    <tr>
-                        <td>服务器IIS版本 </td>
-                        <td>Microsoft-IIS/6.0</td>
-            </tr>
-                    <tr>
-                        <td>本文件所在文件夹 </td>
-                        <td>D:WebSiteHanXiPuTai.comXinYiCMS.Web</td>
-            </tr>
-                    <tr>
-                        <td>服务器操作系统 </td>
-                        <td>Microsoft Windows NT 5.2.3790 Service Pack 2</td>
-            </tr>
-                    <tr>
-                        <td>系统所在文件夹 </td>
-                        <td>C:WINDOWSsystem32</td>
-            </tr>
-                    <tr>
-                        <td>服务器脚本超时时间 </td>
-                        <td>30000秒</td>
-            </tr>
-                    <tr>
-                        <td>服务器的语言种类 </td>
-                        <td>Chinese (People's Republic of China)</td>
-            </tr>
-                    <tr>
-                        <td>.NET Framework 版本 </td>
-                        <td>2.050727.3655</td>
-            </tr>
-                    <tr>
-                        <td>服务器当前时间 </td>
-                        <td>2014-6-14 12:06:23</td>
-            </tr>
-                    <tr>
-                        <td>服务器IE版本 </td>
-                        <td>6.0000</td>
-            </tr>
-                    <tr>
-                        <td>服务器上次启动到现在已运行 </td>
-                        <td>7210分钟</td>
-            </tr>
-                    <tr>
-                        <td>逻辑驱动器 </td>
-                        <td>C:D:</td>
-            </tr>
-                    <tr>
-                        <td>CPU 总数 </td>
-                        <td>4</td>
-            </tr>
-                    <tr>
-                        <td>CPU 类型 </td>
-                        <td>x86 Family 6 Model 42 Stepping 1, GenuineIntel</td>
-            </tr>
-                    <tr>
-                        <td>虚拟内存 </td>
-                        <td>52480M</td>
-            </tr>
-                    <tr>
-                        <td>当前程序占用内存 </td>
-                        <td>3.29M</td>
-            </tr>
-                    <tr>
-                        <td>Asp.net所占内存 </td>
-                        <td>51.46M</td>
-            </tr>
-                    <tr>
-                        <td>当前Session数量 </td>
-                        <td>8</td>
-            </tr>
-                    <tr>
-                        <td>当前SessionID </td>
-                        <td>gznhpwmp34004345jz2q3l45</td>
-            </tr>
-                    <tr>
-                        <td>当前系统用户名 </td>
-                        <td>NETWORK SERVICE</td>
-            </tr>
-        </tbody>
-    </table>
-</article>
+            <article class="cl pd-20">
+            <div class="text-c"> 日期范围：
+                <input type="text" onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'datemax\')||\'%y-%M-%d\'}'})" id="datemin" class="input-text Wdate" style="width:120px;">
+                -
+                <input type="text" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'datemin\')}',maxDate:'%y-%M-%d'})" id="datemax" class="input-text Wdate" style="width:120px;">
+                <input type="text" class="input-text" style="width:250px" placeholder="输入会员名称、电话、邮箱" id="" name="">
+                <button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜订单</button>
+            </div>
+
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-hover table-bg table-sort">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="40">ID</th>
+                            <th width="100">商品图片</th>
+                            <th width="60">商品名称</th>
+                            <th width="70">购买数量</th>
+                            <th width="100">商品价格</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php if(is_array($data)): foreach($data as $key=>$v): ?><tr class="text-c">
+                            <td><?php echo ($v["id"]); ?></td>
+                            <td><img src="" /></td>
+                            <td><?php echo ($v["name"]); ?></td>
+                            <td><?php echo ($v["num"]); ?></td>
+                            <td><?php echo ($v["price"]); ?></td>
+                        </tr><?php endforeach; endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <footer class="footer">
+            <p>感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch<br> Copyright &copy;2015 H-ui.admin v3.0 All Rights Reserved.<br> 本后台系统由<a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
+</footer>
+</div>
+</section>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+/*订单-编辑*/
+function order_edit(title,url,id,w,h){
+    layer_show(title,url,w,h);
+}
+/*订单-删除*/
+function order_del(obj,id){
+    layer.confirm('确认要删除吗？',function(index){
+        $(obj).parents("tr").remove();
+        layer.msg('已删除!',{icon:1,time:1000});
+    });
+}
+
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+
+
+
+</script>
 
 <footer class="footer">
             <p>感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch<br> Copyright &copy;2015 H-ui.admin v3.0 All Rights Reserved.<br> 本后台系统由<a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
@@ -349,30 +237,5 @@
 </div>
 </section>
 
-<!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="/git/www/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/git/www/Public/Admin/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="/git/www/Public/Admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/git/www/Public/Admin/static/h-ui.admin/js/H-ui.admin.page.js"></script>
-<!--/_footer /作为公共模版分离出去-->
-
-<!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript">
-
-</script>
-<!--/请在上方写此页面业务相关的脚本-->
-
-<!--此乃百度统计代码，请自行删除-->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<!--/此乃百度统计代码，请自行删除-->
 </body>
 </html>
-<!--  -->

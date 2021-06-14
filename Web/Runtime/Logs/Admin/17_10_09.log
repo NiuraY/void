@@ -1,0 +1,1005 @@
+[ 2017-10-09T00:01:14+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: UPDATE `shop_orders` SET `getman`='牛逼人',`phone`='12332131234',`code`='132435',`address`='4,54,533,是逼镇' WHERE `id` = 1 [ RunTime:0.0367s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-10-09T00:02:50+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001950s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','6','91','820','5','70','654','2','52','506')  [ RunTime:0.0012s ]
+
+[ 2017-10-09T00:04:53+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','6','91','820','5','70','654','2','52','506')  [ RunTime:0.0003s ]
+
+[ 2017-10-09T00:04:54+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 10,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('2','52','502','13','','','4','55','541','3','40','430','4','57','558')  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+
+[ 2017-10-09T00:04:54+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 15,5   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('5','64','620','6','92','825','3','48','478')  [ RunTime:0.0010s ]
+
+[ 2017-10-09T00:04:57+08:00 ] 192.168.32.233 /git/www/Orders/changeProvince.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0009s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE ( area_type=1 )  [ RunTime:0.0017s ]
+
+[ 2017-10-09T00:04:58+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0008s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 4  [ RunTime:0.0016s ]
+
+[ 2017-10-09T00:04:59+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0010s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 56  [ RunTime:0.0018s ]
+
+[ 2017-10-09T00:05:06+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002185s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0032s ]
+SQL: UPDATE `shop_orders` SET `getman`='春哥',`phone`='12312331234',`code`='343434',`address`='4,56,549,牛逼街道1000号' WHERE `id` = 34 [ RunTime:0.0702s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','56','549')  [ RunTime:0.0003s ]
+
+[ 2017-10-09T00:06:02+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0011s ]
+SQL: UPDATE `shop_orders` SET `getman`='this',`phone`='18332313311',`code`='111111',`address`='3,37,411,喜马拉雅' WHERE `id` = 2 [ RunTime:0.4006s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('3','37','411')  [ RunTime:0.0005s ]
+
+[ 2017-10-09T00:08:25+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004675s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 15,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('5','64','620','4','56','549','3','48','478')  [ RunTime:0.0004s ]
+
+[ 2017-10-09T00:08:35+08:00 ] 192.168.32.233 /git/www/Orders/changeProvince.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004930s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0013s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE ( area_type=1 )  [ RunTime:0.0026s ]
+
+[ 2017-10-09T00:08:37+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0013s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 4  [ RunTime:0.0027s ]
+
+[ 2017-10-09T00:08:39+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=54
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002988s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0050s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 54  [ RunTime:0.0085s ]
+
+[ 2017-10-09T00:08:45+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0015s ]
+SQL: UPDATE `shop_orders` SET `getman`='35号',`phone`='12312331234',`code`='223333',`address`='4,54,533,东圃nbsp' WHERE `id` = 35 [ RunTime:0.0374s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0135s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533')  [ RunTime:0.0003s ]
+
+[ 2017-10-09T00:14:30+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','6','91','820','5','70','654','2','52','506')  [ RunTime:0.0015s ]
+
+[ 2017-10-09T00:14:38+08:00 ] 192.168.32.233 /git/www/Orders/changeProvince.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0034s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE ( area_type=1 )  [ RunTime:0.0056s ]
+
+[ 2017-10-09T00:14:38+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002237s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0029s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 3  [ RunTime:0.0052s ]
+
+[ 2017-10-09T00:14:40+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=51
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0011s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 51  [ RunTime:0.0017s ]
+
+[ 2017-10-09T00:14:53+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: UPDATE `shop_orders` SET `getman`='史蒂芬',`phone`='19211113213',`code`='666435',`address`='3,51,499,市牛' WHERE `id` = 9 [ RunTime:0.0279s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('3','51','499')  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: address; /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 81 行.
+
+[ 2017-10-09T00:15:22+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 10,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('2','52','502','13','','','4','55','541','3','40','430','4','57','558')  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+
+[ 2017-10-09T00:15:46+08:00 ] 192.168.32.233 /git/www/Orders/changeProvince.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0014s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE ( area_type=1 )  [ RunTime:0.0026s ]
+
+[ 2017-10-09T00:15:49+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0013s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 6  [ RunTime:0.0026s ]
+
+[ 2017-10-09T00:15:52+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=78
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0013s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 78  [ RunTime:0.0027s ]
+
+[ 2017-10-09T00:15:59+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003622s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0049s ]
+SQL: UPDATE `shop_orders` SET `getman`='啦啦啦',`phone`='18211212232',`code`='510450',`address`='6,78,713,黄冈' WHERE `id` = 18 [ RunTime:0.0343s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('6','78','713')  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: address; /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 81 行.
+
+[ 2017-10-09T00:17:26+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001948s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0004s ]
+
+[ 2017-10-09T00:45:03+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:05+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:06+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:06+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:07+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:07+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:07+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:08+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:08+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:09+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:45:09+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:52:59+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002103s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:53:01+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:53:02+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:53:51+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:27+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:28+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:29+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:29+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:30+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:31+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:46+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:46+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:54:48+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:55:27+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:55:32+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:55:33+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+ERR: 非法操作:changeStatus
+
+[ 2017-10-09T00:56:26+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T00:56:29+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:13:15+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0004s ]
+
+[ 2017-10-09T01:13:16+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 10,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('2','52','502','13','','','4','55','541','6','78','713','4','57','558')  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+
+[ 2017-10-09T01:13:17+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 15,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('5','64','620','4','56','549','4','54','533')  [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:14:17+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0006s ]
+
+[ 2017-10-09T01:14:18+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002558s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 0,5   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','37','411','20','271','2271','3','38','417','6','79','717')  [ RunTime:0.0012s ]
+
+[ 2017-10-09T01:16:08+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001982s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0031s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-10-09T01:16:17+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0047s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-10-09T01:16:21+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0004s ]
+
+[ 2017-10-09T01:17:00+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003434s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0042s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-10-09T01:17:22+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0013s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:17:49+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003493s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0050s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-10-09T01:19:09+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0027s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-10-09T01:20:27+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:20:53+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0008s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:21:05+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002150s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0012s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-10-09T01:21:26+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0013s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-10-09T01:22:07+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:22:07+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-10-09T01:22:44+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0011s ]
+
+[ 2017-10-09T01:22:45+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002060s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 10,5   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('2','52','502','13','','','4','55','541','6','78','713','4','57','558')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+
+[ 2017-10-09T01:22:45+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001949s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 15,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('5','64','620','4','56','549','4','54','533')  [ RunTime:0.0008s ]
+
+[ 2017-10-09T01:22:47+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001942s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0011s ]
+
+[ 2017-10-09T01:22:49+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002054s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','37','411','20','271','2271','3','38','417','6','79','717')  [ RunTime:0.0010s ]
+
+[ 2017-10-09T01:22:50+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 10,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('2','52','502','13','','','4','55','541','6','78','713','4','57','558')  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+
+[ 2017-10-09T01:23:45+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0024s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 117 行.
+NOTIC: [8] Undefined offset: 0 /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 119 行.
+NOTIC: [8] Undefined offset: 0 /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 119 行.
+
+[ 2017-10-09T01:26:35+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:26:36+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:26:37+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:26:37+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0029s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-10-09T01:26:37+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:26:38+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002696s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0031s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-10-09T01:26:38+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0032s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-10-09T01:26:38+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0030s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-10-09T01:26:47+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0291s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:26:48+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:26:48+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0008s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:26:48+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:26:48+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0008s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:26:49+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0031s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-10-09T01:27:00+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002172s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0027s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-10-09T01:27:01+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+NOTIC: [8] Undefined variable: status /usr/local/apache2/htdocs/git/www/Web/Admin/Controller/OrdersController.class.php 第 113 行.
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:27:30+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0008s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:27:47+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0008s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:28:11+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0011s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:28:56+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0011s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `shop_orders` SET `status`='8' WHERE `id` = 2 [ RunTime:0.0559s ]
+
+[ 2017-10-09T01:29:04+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:29:26+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `shop_orders` SET `status`='3' WHERE `id` = 1 [ RunTime:0.0078s ]
+
+[ 2017-10-09T01:32:07+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0008s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `shop_orders` SET `status`='8' WHERE `id` = 6 [ RunTime:0.0167s ]
+
+[ 2017-10-09T01:32:29+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0004s ]
+
+[ 2017-10-09T01:33:39+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002036s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0023s ]
+
+[ 2017-10-09T01:33:40+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002211s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 10,5   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('2','52','502','13','','','4','55','541','6','78','713','4','57','558')  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+NOTIC: [8] Undefined index:  /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 38 行.
+
+[ 2017-10-09T01:33:46+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0029s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `shop_orders` SET `status`='8' WHERE `id` = 18 [ RunTime:0.0315s ]
+
+[ 2017-10-09T01:34:07+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 15,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('5','64','620','4','56','549','4','54','533')  [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:34:49+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 15,5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('5','64','620','4','56','549','4','54','533')  [ RunTime:0.0007s ]
+
+[ 2017-10-09T01:34:54+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=34
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `shop_orders` SET `status`='3' WHERE `id` = 34 [ RunTime:0.0132s ]
+
+[ 2017-10-09T01:35:50+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003536s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0034s ]
+SQL: UPDATE `shop_orders` SET `getman`='萨芬撒a',`phone`='14711111111',`code`='222222',`address`='3,38,417,马拉拉' WHERE `id` = 4 [ RunTime:0.0073s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('3','38','417')  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: address; /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 81 行.
+
+[ 2017-10-09T01:35:57+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0061s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `shop_orders` SET `status`='3' WHERE `id` = 4 [ RunTime:0.0140s ]
+
+[ 2017-10-09T01:36:32+08:00 ] 192.168.32.233 /git/www/Orders/changeStatus.html?id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0012s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-10-09T01:40:21+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0011s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-10-09T01:40:29+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003666s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0032s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-10-09T01:40:45+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','49','483','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:40:49+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0031s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `shop_orders` SET `getman`='牛逼人嗄',`phone`='12312331234',`code`='666435',`address`='4,54,533,牛逼号' WHERE `id` = 7 [ RunTime:0.0432s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533')  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: address; /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 81 行.
+
+[ 2017-10-09T01:42:24+08:00 ] 192.168.32.233 /git/www/Orders/changeProvince.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0008s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE ( area_type=1 )  [ RunTime:0.0016s ]
+
+[ 2017-10-09T01:42:24+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0010s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 3  [ RunTime:0.0022s ]
+
+[ 2017-10-09T01:42:26+08:00 ] 192.168.32.233 /git/www/Orders/changeArea.html?pid=48
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0009s ]
+SQL: SELECT `area_name`,`id` FROM `shop_area` WHERE `parent_id` = 48  [ RunTime:0.0016s ]
+
+[ 2017-10-09T01:42:28+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `shop_orders` SET `getman`='牛逼人嗄',`phone`='12312331234',`code`='666435',`address`='3,48,480,逼号' WHERE `id` = 8 [ RunTime:0.0349s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('3','48','480')  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: address; /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 81 行.
+
+[ 2017-10-09T01:42:38+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:42:39+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:42:39+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0011s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:42:40+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001887s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0027s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-10-09T01:43:00+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:43:02+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0008s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-10-09T01:43:35+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0009s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-10-09T01:43:46+08:00 ] 192.168.32.233 /git/www/Orders/index.html?page=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_orders` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_orders` LIMIT 5,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533','3','48','480','3','51','499','5','70','654','2','52','506')  [ RunTime:0.0004s ]
+
+[ 2017-10-09T01:43:58+08:00 ] 192.168.32.233 /git/www/Orders/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002031s ]
+SQL: SHOW COLUMNS FROM `shop_orders` [ RunTime:0.0027s ]
+SQL: SELECT `status` FROM `shop_orders` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `shop_orders` SET `getman`='牛逼人嗄',`phone`='13312331234',`code`='666435',`address`='4,54,533,牛逼号' WHERE `id` = 7 [ RunTime:0.0465s ]
+SQL: SELECT `id`,`ordernum`,`uid`,`getman`,`phone`,`address`,`code`,`message`,`total`,`status`,`addtime` FROM `shop_orders` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_area` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`area_name` FROM `shop_area` WHERE `id` IN ('4','54','533')  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: address; /usr/local/apache2/htdocs/git/www/Web/Admin/Model/OrdersModel.class.php 第 81 行.
+

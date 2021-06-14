@@ -1,0 +1,71 @@
+<include file="Public/meta"/>
+<include file="Public/header"/>
+<include file="Public/menu"/>
+
+<section class="Hui-article-box">
+    <nav class="breadcrumb">
+    <i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 订单管理 <span class="c-gray en">&gt;</span> 订单管理 <span class="c-gray en">&gt;</span> 订单详情<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+    </nav>
+    <div class="Hui-article">
+            <article class="cl pd-20">
+            <div class="text-c"> 日期范围：
+                <input type="text" onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'datemax\')||\'%y-%M-%d\'}'})" id="datemin" class="input-text Wdate" style="width:120px;">
+                -
+                <input type="text" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'datemin\')}',maxDate:'%y-%M-%d'})" id="datemax" class="input-text Wdate" style="width:120px;">
+                <input type="text" class="input-text" style="width:250px" placeholder="输入会员名称、电话、邮箱" id="" name="">
+                <button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜订单</button>
+            </div>
+
+            <div class="mt-20">
+                <table class="table table-border table-bordered table-hover table-bg table-sort">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="40">ID</th>
+                            <th width="100">商品图片</th>
+                            <th width="60">商品名称</th>
+                            <th width="70">购买数量</th>
+                            <th width="100">商品价格</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="data" item="v">
+                        <tr class="text-c">
+                            <td>{{$v.id}}</td>
+                            <td><img src="" /></td>
+                            <td>{{$v.name}}</td>
+                            <td>{{$v.num}}</td>
+                            <td>{{$v.price}}</td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <footer class="footer">
+            <p>感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch<br> Copyright &copy;2015 H-ui.admin v3.0 All Rights Reserved.<br> 本后台系统由<a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
+</footer>
+</div>
+</section>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+/*订单-编辑*/
+function order_edit(title,url,id,w,h){
+    layer_show(title,url,w,h);
+}
+/*订单-删除*/
+function order_del(obj,id){
+    layer.confirm('确认要删除吗？',function(index){
+        $(obj).parents("tr").remove();
+        layer.msg('已删除!',{icon:1,time:1000});
+    });
+}
+
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+
+
+
+</script>
+
+<include file="Public/footer"/>
